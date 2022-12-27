@@ -16,8 +16,9 @@
   color: white;
   position: relative;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden;
+  min-height: 100vh;
   /* display: flex;
   flex-direction: row;
   justify-content: flex-end; */
