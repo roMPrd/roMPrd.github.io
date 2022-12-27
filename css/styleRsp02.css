@@ -340,13 +340,14 @@ border-radius: 0px;
 
   .container-project {
     flex-direction: column;
+    margin: 1rem 2rem;
   }
 
   #sidebar-container {
     width: 30%;
   }
   .title {
-    margin-top: 10vh;
+    margin-top: 15vh;
   }
   .img-project {
     width: 100%;
