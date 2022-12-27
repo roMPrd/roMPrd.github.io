@@ -1,0 +1,324 @@
+
+/* ---------- Color Variables ---------- */
+
+:root {
+  --lightgrey: #7F7F83;
+  --darkgrey: #131417;
+  --menugrey: #1E1F26;
+  --textgrey: #868CA0;
+}
+
+/* ---------- General ---------- */
+
+.background-container {
+  background-color: var(--darkgrey);
+  font-family: lato;
+  color: white;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: flex-end; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 0;
+}
+
+/* ---------- Header ---------- */
+
+.header {
+  position: absolute;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.header .links {
+  background-color: var(--menugrey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  height: 100%;
+}
+
+.header p {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-radius: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: ubuntu;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.header p:hover {
+background-color: var(--lightgrey);
+border-radius: 0px;
+}
+
+/* ---------- Sidebar ---------- */
+
+#sidebar-container {
+  position: absolute;
+  width: 15%;
+  height: 100vh;
+  z-index: 5;
+}
+
+#sidebar {
+  background-color: var(--menugrey);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.header-sidebar p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+#sidebar .projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+#sidebar .projects p {
+  font-size: 1.5rem;
+  margin: 0;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+#sidebar .projects p:hover {
+  color: var(--lightgrey);
+}
+
+.sidebar-retract {
+}
+
+.sidebar-retract .fas {
+  background-color: var(--menugrey);
+  font-size: 1rem;
+  position: absolute;
+  top: 20%;
+  right: -30px;
+  cursor: pointer;
+  height: 5rem;
+  width: fit-content;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-radius: 0 1rem 1rem 0;
+  z-index: 4;
+}
+
+.sidebar-retract .fas:hover {
+  color: var(--lightgrey);
+}
+
+.retract-effect {
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 15%; */
+  transform: translateX(-100%);
+}
+
+/* ---------- Container ---------- */
+
+.container {
+  background-color: var(--darkgrey);
+  width: 85%;
+  height: 100%;
+  max-width: 100%;
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}
+
+.extend-effect {
+  width: 100%;
+}
+
+.hide-effect {
+  display: none !important;
+}
+
+/* ---------- Projects ---------- */
+
+.container-project {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  color: white;
+  margin: 2rem;
+}
+
+.title h1 {
+    color: white;
+    font-weight: bold;
+}
+
+.container-codehunter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 90%;
+  height: 100%;
+}
+
+
+.text-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+  padding: 1rem;
+  width: 40%;
+  color: white;
+}
+
+.text-title {
+  margin-bottom: 1rem;
+}
+
+.text-project h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: ubuntu;
+}
+
+.text-project h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: ubuntu;
+}
+
+.text-green {
+  color: #00FF00;
+  font-size: 150%;
+  letter-spacing: -3px;
+}
+
+.img-project {
+  height: 30vh;
+  width: 40%;
+  border-radius: 20px;
+}
+
+.img-project img {
+  border-radius: 20px;
+  box-shadow: 6px 6px 13px rgba(127, 127, 131, 0.3);
+}
+
+/* ---------- Contact ---------- */
+
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 90%;
+  height: 100%;
+}
+
+.text-red {
+  color: red;
+  font-size: 150%;
+  letter-spacing: -3px;
+}
+
+.avatar-big {
+  /* width: 100%; */
+  height: 100%;
+  border-radius: 50% !important;
+  margin-bottom: 1rem;
+}
+
+.links-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.links-contact .fa-brands {
+  color:white;
+  font-size: 2rem;
+  width: auto;
+  padding: 2rem;
+}
+.links-contact .fa-brands:hover {
+  color: var(--lightgrey);
+}
+
+.links-contact .fa-solid {
+  color:white;
+  font-size: 2rem;
+  width: auto;
+  padding: 2rem;
+}
+.links-contact .fa-solid:hover {
+  color: var(--lightgrey);
+}
