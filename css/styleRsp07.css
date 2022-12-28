@@ -344,6 +344,12 @@ border-radius: 0px;
   p {
     font-size: 0.8rem;
   }
+
+  .background-container {
+
+    overflow: scroll;
+
+  }
   .container {
     width: 100vw;
     height: fit-content;
