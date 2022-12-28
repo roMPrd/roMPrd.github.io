@@ -209,6 +209,10 @@ border-radius: 0px;
   margin: 2rem;
 }
 
+.title {
+  margin-top: 10vh
+}
+
 .title h1 {
     color: white;
     font-weight: bold;
