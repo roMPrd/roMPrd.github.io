@@ -1,0 +1,75 @@
+/* ===== Google Font Import - Poppins ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #f0faff;
+}
+.nav {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
+  background: #4e98f7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.nav,
+.nav .nav-links {
+  display:flex;
+  align-items: center;
+}
+.nav {
+  justify-content: space-between;
+}
+.nav .nav-links {
+  column-gap: 20px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav .logo {
+  font-size: 22px;
+  font-weight: 500;
+
+}
+.nav .search-icon {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.nav .search-box {
+  position: absolute;
+  right: 250px;
+  height: 45px;
+  max-width: 555px;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+.search-box .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #4e98f7;
+  cursor: pointer;
+}
+.search-box input {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 0 15px 0 45px;
+}
