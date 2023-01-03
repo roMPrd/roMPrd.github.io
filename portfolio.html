@@ -10,20 +10,24 @@
   <link rel="stylesheet" href="style.css">
   <!-- ===== Unicons CSS ===== -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- ===== JS ===== -->
+  <script src="script.js" defer></script>
 
 </head>
   <body>
     <nav class="nav">
-      
+      <i class="uil uil-bars navOpenBtn"></i>
       <a href="#" class="logo">@roMPrd</a>
+
       <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
         <li><a href="#">Home</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">About Me</a></li>
         <li><a href="#">Contact Me</a></li>
       </ul>
 
-      <i class="uil uil-search search-icon"></i>
+      <i class="uil uil-search search-icon" id="searchIcon"></i>
       <div class="search-box">
         <i class="uil uil-search search-icon"></i>
         <input type="text" placeholder="Search...">
