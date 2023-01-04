@@ -2,6 +2,8 @@ const nav = document.querySelector('.nav');
   searchIcon = document.querySelector('#searchIcon');
   navOpenBtn = document.querySelector('.navOpenBtn');
   navCloseBtn = document.querySelector('.navCloseBtn');
+  logo = document.querySelector('.logo');
+  navLinks = document.querySelector('.nav-links');
 
 
 
@@ -23,4 +25,19 @@ navOpenBtn.addEventListener('click', () => {
 });
 navCloseBtn.addEventListener('click', () => {
   nav.classList.remove('openNav');
+});
+
+logo.addEventListener('click', () => {
+  if (nav.classList.contains('openSearch')) {
+    nav.classList.remove('openSearch');
+    searchIcon.classList.replace("uil-times", "uil-search");
+
+  }
+});
+navLinks.addEventListener('click', () => {
+  if (nav.classList.contains('openSearch')) {
+    nav.classList.remove('openSearch');
+    searchIcon.classList.replace("uil-times", "uil-search");
+
+  }
 });
