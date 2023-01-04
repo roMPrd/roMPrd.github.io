@@ -10,6 +10,11 @@ const body = document.querySelector('body');
   navLinks = document.querySelector('.nav-links');
   projectsMenu = document.querySelector('.projects-menu');
   projectsDropdownLinks = document.querySelector('.projects-dropdown-links');
+  containerHome = document.querySelector('.container-home');
+  containerProjects = document.querySelector('.container-projects');
+  containerAboutMe = document.querySelector('.container-about-me');
+  containerContactMe = document.querySelector('.container-contact-me');
+  projectCodehunter = document.querySelector('.project-codehunter');
 
 // ===== Toggle Dark/Light Mode ===== //
 
@@ -75,3 +80,4 @@ projectsMenu.addEventListener('click', () => {
   arrowIcon.classList.replace('uil-angle-up', "uil-angle-down");
 });
 
+// ===== Toggle Pages ===== //
