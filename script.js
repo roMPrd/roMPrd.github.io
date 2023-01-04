@@ -3,6 +3,7 @@ const body = document.querySelector('body');
   modeToggle = document.querySelector('.darkLight');
   modeIcon = document.querySelector('#modeIcon');
   searchIcon = document.querySelector('#searchIcon');
+  arrowIcon = document.querySelector('#arrowIcon');
   navOpenBtn = document.querySelector('.navOpenBtn');
   navCloseBtn = document.querySelector('.navCloseBtn');
   logo = document.querySelector('.logo');
@@ -68,4 +69,9 @@ navLinks.addEventListener('click', () => {
 
 projectsMenu.addEventListener('click', () => {
   projectsDropdownLinks.classList.toggle('openProject');
+  if (projectsDropdownLinks.classList.contains('openProject')) {
+    return arrowIcon.classList.replace('uil-angle-down', "uil-angle-up");
+  }
+  arrowIcon.classList.replace('uil-angle-up', "uil-angle-down");
 });
+

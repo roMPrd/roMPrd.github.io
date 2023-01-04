@@ -171,6 +171,7 @@ body.dark .search-box input::placeholder {
 }
 
 /* ===== projects menu ===== */
+
 .nav .nav-links .projects-dropdown-links {
   display:flex;
   align-items: center;
@@ -203,6 +204,18 @@ body.dark .search-box input::placeholder {
 .nav-links .projects-dropdown-links.openProject {
   opacity: 1;
   pointer-events: auto;
+}
+.nav-links .projects-menu .projects{
+  position: relative;
+}
+.nav-links .projects-menu .projects i {
+  position: absolute;
+  font-size: 30px;
+  color: var(--text-color);
+  cursor: pointer;
+  top: -8px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* responsive */
@@ -279,5 +292,12 @@ body.dark .search-box input::placeholder {
   }
   .nav-links .projects-dropdown-links.openProject {
     position: initial;
+  }
+  .nav-links li a::before {
+    content: none;
+  }
+  .nav-links .projects-menu .projects i {
+    opacity: 1;
+    pointer-events: auto;
   }
 }
