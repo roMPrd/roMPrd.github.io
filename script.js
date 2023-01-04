@@ -1,11 +1,22 @@
-const nav = document.querySelector('.nav');
+const body = document.querySelector('body');
+  nav = document.querySelector('.nav');
+  modeToggle = document.querySelector('.darkLight');
+  modeIcon = document.querySelector('#modeIcon');
   searchIcon = document.querySelector('#searchIcon');
   navOpenBtn = document.querySelector('.navOpenBtn');
   navCloseBtn = document.querySelector('.navCloseBtn');
   logo = document.querySelector('.logo');
   navLinks = document.querySelector('.nav-links');
 
+// ===== Toggle Dark/Light Mode ===== //
 
+modeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark');
+  if (body.classList.contains('dark')) {
+    return modeIcon.classList.replace("uil-moon", "uil-sun");
+  }
+  modeIcon.classList.replace("uil-sun", "uil-moon");
+});
 
 searchIcon.addEventListener('click', () => {
   nav.classList.toggle('openSearch');

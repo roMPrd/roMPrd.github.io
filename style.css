@@ -2,6 +2,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* ===== Color Variables ===== */
+
+:root {
+  --primary-color: #4e98f7;
+  --background-color: #f0faff;
+  --sidebar-color: #242526;
+  --text-color: #fff;
+  --text-secondary-color: #11101d;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +20,16 @@
   font-family: 'Poppins', sans-serif;
 }
 body {
-  background-color: #f0faff;
+  height: 100vh;
+  background-color: var(--background-color);
+  transition: all 0.4s ease;
+}
+body.dark {
+  --primary-color: #242526;
+  --background-color: #18191A;
+  --sidebar-color: #242526;
+  --text-color: #CCC;
+  --text-secondary-color: #fff;
 }
 .nav {
   position:fixed;
@@ -17,7 +37,7 @@ body {
   left: 0;
   width: 100%;
   padding: 15px 200px;
-  background: #4e98f7;
+  background: var(--primary-color);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .nav,
@@ -33,7 +53,7 @@ body {
 .nav-links a {
   position: relative;
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
   padding: 10px;
 }
 .nav-links li a {
@@ -48,7 +68,7 @@ body {
   height: 6px;
   width: 6px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--text-color);
   opacity: 0;
 }
 .nav-links li:hover a::before {
@@ -61,7 +81,7 @@ body {
 .nav .nav-links {
   column-gap: 20px;
   list-style: none;
-  color: #fff;
+  color: var(--text-color);
 }
 .nav .nav-links a {
   transition: all 0.2s linear;
@@ -76,7 +96,7 @@ body {
 
 }
 
-/* search-box / darLight */
+/* ===== search-box / darLight ===== */
 
 .darkLight-searchBox {
   display: flex;
@@ -90,12 +110,11 @@ body {
   height: 40px;
   width: 40px;
   margin: 0 5px;
-  /* background-color: red; */
 }
-.nav .sun-icon,
-.nav .search-icon {
+.nav .moonIcon,
+.nav .searchIcon {
   font-size: 20px;
-  color: #fff;
+  color: var(--text-color);
   cursor: pointer;
 }
 
@@ -107,7 +126,7 @@ body {
   width: 100%;
   top: 70px;
   right: 190px;
-  border: 4px solid #4e98f7;
+  border: 4px solid var(--primary-color);
   box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
   border-radius: 8px;
   opacity: 0;
@@ -119,30 +138,39 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
-/* .search-box .search-icon {
+.search-box .search-icon {
   position: absolute;
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
   font-size: 20px;
-  color: #4e98f7;
+  color: var(--primary-color);
   cursor: pointer;
-} */
+}
 .search-box input {
   height: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: var(--text-color);
   border: none;
   outline: none;
   border-radius: 6px;
   padding: 0 15px 0 45px;
 }
+body.dark .search-box input {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+body.dark .search-box .search-icon,
+body.dark .search-box input::placeholder {
+  color: var(--text-color);
+}
+
 .nav .navOpenBtn,
 .nav .navCloseBtn {
   display: none;
 }
 
-/* projects menu */
+/* ===== projects menu ===== */
 
 .nav-links .projects-menu {
   position: relative;
@@ -155,7 +183,7 @@ body {
   padding: 20px;
   position: absolute;
   transform: translateX(-25%);
-  background: #4e98f7;
+  background: var(--primary-color);
   border-radius: 0 0 8px 8px;
   top: 70px;
   box-shadow: 0 4px 10px rgb(0 0 0 / 20%);
@@ -195,7 +223,7 @@ body {
     padding-top: 100px;
     row-gap: 30px;
     flex-direction: column;
-    background-color: #11101d;
+    background-color: var(--sidebar-color);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease;
     z-index: 100;
@@ -204,7 +232,7 @@ body {
     left: 0;
   }
   .nav .navOpenBtn {
-    color: #fff;
+    color: var(--text-color);
     font-size: 20px;
     cursor: pointer;
   }
@@ -213,7 +241,7 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-    color: #fff;
+    color: var(--text-color);
     font-size: 20px;
     cursor: pointer;
   }
