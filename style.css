@@ -8,6 +8,7 @@
   --primary-color: #4e98f7;
   --background-color: #f0faff;
   --sidebar-color: #242526;
+  --sidebar-secondary-color: #323232;
   --text-color: #fff;
   --text-secondary-color: #11101d;
 }
@@ -270,14 +271,11 @@ body.dark .search-box input::placeholder {
   .nav-links .projects-dropdown-links {
     transform: none;
     border-radius: 4px;
-    border: 1px solid var(--text-color);
+    /* border: 1px solid var(--text-color); */
     box-shadow: none;
-    background: var(--sidebar-color);
+    background: var(--sidebar-secondary-color);
     margin-top: 20px;
     transition: none;
-
-
-
   }
   .nav-links .projects-dropdown-links.openProject {
     position: initial;
