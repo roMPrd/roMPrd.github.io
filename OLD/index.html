@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@roMPrd's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleRsp07.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" >
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+  </head>
+  <body>
+    <div class="background-container">
+
+      <!-- ********** SIDEBAR ********** -->
+      <div id="sidebar-container">
+        <div id="sidebar">
+          <div class="header-sidebar">
+            <div class="header-sidebar-img">
+              <img class="avatar" src="images/photoProfile.jpg" alt="romprd">
+            </div>
+            <div class="header-sidebar-text">
+              <p>@roMPrd</p>
+              <p>FullStack Web Developer, Junior</p>
+            </div>
+          </div>
+
+          <div class="projects">
+            <h6 onclick="hideToHome()">Code Hunter</h6>
+            <!-- <p>Dev Hunter</p> -->
+          </div>
+
+          <div class="sidebar-retract" onclick="retract()">
+            <i id="chevron-btn" class="fas fa-chevron-left"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- ********** MAIN ********** -->
+      <div id="container-expand" class="container">
+
+        <!-- ********** HEADER ********** -->
+      <div class="header">
+        <div class="links">
+          <p onclick="hideToHome()">Home</p>
+          <!-- <a href="">Portfolio</a> -->
+          <p onclick="hideToContact()">Contact</p>
+          <!-- <p>About</p> -->
+        </div>
+      </div>
+
+        <!-- ********** CODEHUNTER ********** -->
+        <div id="container-home" class="container-codehunter container-effect">
+          <div class="title">
+            <h1>CODE <span class="text-green">HUNTER</span></h1>
+          </div>
+          <div class="container-project">
+            <div class="text-project">
+              <div class="text-title">
+                <h2>
+                  Become a <span class="text-green">Code Hunter</span>.
+                </h2>
+                <h4>
+                  <span class="text-green">Solve bugs</span>, receive experience and get paid.
+                </h4>
+              </div>
+              <p>
+                description:
+              </p>
+              <p>School project (LeWagon).</p>
+              <p>
+                You can either post or solve a code problem. Each problem has a bounty.
+                By posting a problem, you draft a smart contract that will be executed when the problem is solved.
+                The party who solve the problem will receive the bounty.
+                The project has been tested with Metamask and Ganache.
+              </p>
+            </div>
+            <div class="img-project">
+              <img src="/images/codehunter.gif" alt="">
+            </div>
+          </div>
+          <div class="youtube-container">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/_8g3QtiEXC0?start=5633" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="links-contact">
+
+            <a href="https://github.com/roMPrd/RubyHunters" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.codehunter.me/" target="_blank">
+              <i class="fa-solid fa-at"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- ********** CONTACT ********** -->
+        <div id="container-contact" class="container-contact container-effect hide-effect">
+          <div class="title">
+            <h1>CONTACT</h1>
+          </div>
+          <div class="container-project">
+            <div class="text-project">
+              <div class="text-title">
+                <h2>
+                  Romain <span class="text-red">DELIMAL</span>
+                </h2>
+                <h4>
+                  <span class="text-red">FullStack</span> Web Developer, Junior.
+                </h4>
+              </div>
+              <p>Bootcamp Le Wagon, Batch #1030, Paris</p>
+              <p>
+                HTML, CSS, Bootstrap, JavaScript ES6, SQL, git, GitHub, Heroku and Ruby on Rails.
+              </p>
+            </div>
+            <div class="img-project">
+              <img class="avatar-big" src="images/photoProfile.jpg" alt="romprd">
+            </div>
+          </div>
+          <div class="links-contact">
+
+            <a href="https://github.com/roMPrd" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="mailto: rom.delimal@gmail.com" target="_blank">
+              <i class="fa-solid fa-at"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/romain-delimal/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <!-- ********** SCRIPTS ********** -->
+
+    <script src="js/home.js" defer></script>
+
+  </body>
+</html>
