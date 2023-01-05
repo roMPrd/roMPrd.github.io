@@ -15,6 +15,12 @@ const body = document.querySelector('body');
   containerAboutMe = document.querySelector('.container-about-me');
   containerContactMe = document.querySelector('.container-contact-me');
   projectCodehunter = document.querySelector('.project-codehunter');
+  projectBatch1030 = document.querySelector('.project-batch1030');
+  linkHome = document.querySelector('#link-home');
+  linkAboutMe = document.querySelector('#link-about-me');
+  linkContactMe = document.querySelector('#link-contact-me');
+  linkCodehunter = document.querySelector('#link-codehunter');
+  linkBatch1030 = document.querySelector('#link-batch1030');
 
 // ===== Toggle Dark/Light Mode ===== //
 
@@ -81,3 +87,55 @@ projectsMenu.addEventListener('click', () => {
 });
 
 // ===== Toggle Pages ===== //
+
+window.onload = () => {
+  containerAboutMe.classList.add('hide');
+  containerContactMe.classList.add('hide');
+  projectCodehunter.classList.add('hide');
+  projectBatch1030.classList.add('hide');
+};
+
+linkHome.addEventListener('click', () => {
+  containerHome.classList.remove('hide');
+
+  containerAboutMe.classList.add('hide');
+  containerContactMe.classList.add('hide');
+  projectCodehunter.classList.add('hide');
+  projectBatch1030.classList.add('hide');
+});
+
+linkAboutMe.addEventListener('click', () => {
+  containerAboutMe.classList.remove('hide');
+
+  containerHome.classList.add('hide');
+  containerContactMe.classList.add('hide');
+  projectCodehunter.classList.add('hide');
+  projectBatch1030.classList.add('hide');
+});
+
+linkContactMe.addEventListener('click', () => {
+  containerContactMe.classList.remove('hide');
+
+  containerHome.classList.add('hide');
+  containerAboutMe.classList.add('hide');
+  projectCodehunter.classList.add('hide');
+  projectBatch1030.classList.add('hide');
+});
+
+linkCodehunter.addEventListener('click', () => {
+  projectCodehunter.classList.remove('hide');
+
+  containerHome.classList.add('hide');
+  containerAboutMe.classList.add('hide');
+  containerContactMe.classList.add('hide');
+  projectBatch1030.classList.add('hide');
+});
+
+linkBatch1030.addEventListener('click', () => {
+  projectBatch1030.classList.remove('hide');
+
+  containerHome.classList.add('hide');
+  containerAboutMe.classList.add('hide');
+  containerContactMe.classList.add('hide');
+  projectCodehunter.classList.add('hide');
+});

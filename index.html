@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  
+
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
@@ -38,7 +38,7 @@
 
       <ul class="nav-links">
         <i class="uil uil-times navCloseBtn"></i>
-        <li><a href="#" class="">Home</a></li>
+        <li><a href="#" id="link-home">Home</a></li>
         <li class="projects-menu">
           <div class="projects">
             <a href="#">Projects</a>
@@ -46,13 +46,13 @@
           </div>
           <ul class="projects-dropdown-links">
             <!-- <li><a href="#">Projects</a></li> -->
-            <li><a href="#" id="project-codehunter">Code Hunter</a></li>
-            <li><a href="#">Batch 1030</a></li>
+            <li><a href="#" id="link-codehunter">Code Hunter</a></li>
+            <li><a href="#" id="link-batch1030">Batch 1030</a></li>
             <!-- <li><a href="#">Code Hunter de la mort qui tue</a></li> -->
           </ul>
         </li>
-        <li><a href="#" id="project-codehunter">About Me</a></li>
-        <li><a href="#" id="project-codehunter">Contact Me</a></li>
+        <li><a href="#" id="link-about-me">About Me</a></li>
+        <li><a href="#" id="link-contact-me">Contact Me</a></li>
       </ul>
 
 
@@ -85,7 +85,7 @@
       <div class="container-projects">
 
         <!-- ===== Codehunter ===== -->
-        <div class="project-codehunter">
+        <div class="project-codehunter hide">
           <h4>CODEHUNTER</h4>
           <div class="container-project-text">
             <div class="text-title">
@@ -117,20 +117,27 @@
             </div>
           </div>
 
+
+          <div class="img-project">
+            <img src="/images/codehunter.gif" alt="">
+          </div>
+
+          <div class="youtube-container">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/_8g3QtiEXC0?start=5633" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
         </div>
 
-        <div class="img-project">
-          <img src="/images/codehunter.gif" alt="">
-        </div>
+        <!-- ===== Batch1030 ===== -->
 
-        <div class="youtube-container">
-          <iframe class="youtube-video" src="https://www.youtube.com/embed/_8g3QtiEXC0?start=5633" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="project-batch1030 hide">
+          <h4>Batch1030</h4>
         </div>
 
       </div>
 
       <!-- ===== About Me ===== -->
-      <div class="container-about-me">
+      <div class="container-about-me hide">
 
         <div class="text-title">
           <h2>
@@ -158,7 +165,7 @@
       </div>
       <!-- ===== Contact Me ===== -->
 
-      <div class="container-contact-me">
+      <div class="container-contact-me hide">
 
         <div class="img-project">
           <img class="avatar-big" src="images/photoProfile.jpg" alt="romprd">

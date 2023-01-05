@@ -229,6 +229,12 @@ section {
   padding: 5% 10%;
 }
 
+/* ===== Hide Pages ===== */
+
+.hide {
+  display: none;
+}
+
 /* ===== responsive ===== */
 
 @media screen and (max-width: 1160px){
