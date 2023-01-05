@@ -96,6 +96,7 @@ projectsMenu.addEventListener('click', () => {
 // };
 
 logo.addEventListener('click', () => {
+  nav.classList.remove('openNav');
   projectsDropdownLinks.classList.remove('openProject');
 
   containerHome.classList.remove('hide');
@@ -107,6 +108,7 @@ logo.addEventListener('click', () => {
 });
 
 linkHome.addEventListener('click', () => {
+  nav.classList.remove('openNav');
   projectsDropdownLinks.classList.remove('openProject');
 
   containerHome.classList.remove('hide');
@@ -118,6 +120,7 @@ linkHome.addEventListener('click', () => {
 });
 
 linkAboutMe.addEventListener('click', () => {
+  nav.classList.remove('openNav');
   projectsDropdownLinks.classList.remove('openProject');
 
   containerAboutMe.classList.remove('hide');
@@ -129,6 +132,7 @@ linkAboutMe.addEventListener('click', () => {
 });
 
 linkContactMe.addEventListener('click', () => {
+  nav.classList.remove('openNav');
   projectsDropdownLinks.classList.remove('openProject');
 
   containerContactMe.classList.remove('hide');
@@ -140,6 +144,7 @@ linkContactMe.addEventListener('click', () => {
 });
 
 linkCodehunter.addEventListener('click', () => {
+  nav.classList.remove('openNav');
   projectCodehunter.classList.remove('hide');
 
   containerHome.classList.add('hide');
@@ -149,6 +154,7 @@ linkCodehunter.addEventListener('click', () => {
 });
 
 linkBatch1030.addEventListener('click', () => {
+  nav.classList.remove('openNav');
   projectBatch1030.classList.remove('hide');
 
   containerHome.classList.add('hide');
