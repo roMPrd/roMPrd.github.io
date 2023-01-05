@@ -103,6 +103,7 @@ logo.addEventListener('click', () => {
 
   containerAboutMe.classList.add('hide');
   containerContactMe.classList.add('hide');
+  containerProjects.classList.add('hide');
   projectCodehunter.classList.add('hide');
   projectBatch1030.classList.add('hide');
 });
@@ -115,6 +116,7 @@ linkHome.addEventListener('click', () => {
 
   containerAboutMe.classList.add('hide');
   containerContactMe.classList.add('hide');
+  containerProjects.classList.add('hide');
   projectCodehunter.classList.add('hide');
   projectBatch1030.classList.add('hide');
 });
@@ -127,6 +129,7 @@ linkAboutMe.addEventListener('click', () => {
 
   containerHome.classList.add('hide');
   containerContactMe.classList.add('hide');
+  containerProjects.classList.add('hide');
   projectCodehunter.classList.add('hide');
   projectBatch1030.classList.add('hide');
 });
@@ -139,6 +142,7 @@ linkContactMe.addEventListener('click', () => {
 
   containerHome.classList.add('hide');
   containerAboutMe.classList.add('hide');
+  containerProjects.classList.add('hide');
   projectCodehunter.classList.add('hide');
   projectBatch1030.classList.add('hide');
 });
@@ -146,6 +150,7 @@ linkContactMe.addEventListener('click', () => {
 linkCodehunter.addEventListener('click', () => {
   nav.classList.remove('openNav');
   projectCodehunter.classList.remove('hide');
+  containerProjects.classList.remove('hide');
 
   containerHome.classList.add('hide');
   containerAboutMe.classList.add('hide');
@@ -156,6 +161,7 @@ linkCodehunter.addEventListener('click', () => {
 linkBatch1030.addEventListener('click', () => {
   nav.classList.remove('openNav');
   projectBatch1030.classList.remove('hide');
+  containerProjects.classList.remove('hide');
 
   containerHome.classList.add('hide');
   containerAboutMe.classList.add('hide');

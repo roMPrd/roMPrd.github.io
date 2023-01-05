@@ -237,6 +237,43 @@ section {
   top: 80px;
   z-index: -100;
   padding: 5% 10%;
+  width: 100vw;
+}
+
+/* ===== containers ===== */
+
+.container-projects {
+  height: 100%;
+  width: 100%;
+}
+.container-project-all {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.container-project-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.container-project-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 /* ===== avatar ===== */
