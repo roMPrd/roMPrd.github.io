@@ -11,6 +11,7 @@
   --sidebar-secondary-color: #323232;
   --text-color: #fff;
   --text-secondary-color: #11101d;
+  --title-secondary-color: #4e98f7;
 }
 
 /* ===== general ===== */
@@ -345,12 +346,12 @@ transition: all 0.4s ease;
   align-items: center;
 }
 .container-projects .container-left u {
-  text-decoration-color: var(--primary-color);
+  text-decoration-color: var(--title-secondary-color);
   text-decoration-thickness: 4px;
 }
 .container-projects .container-left span {
   font-size: 150%;
-  color: var(--primary-color);
+  color: var(--title-secondary-color);
 }
 
 /* ===== span / links ===== */
