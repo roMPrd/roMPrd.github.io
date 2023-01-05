@@ -338,7 +338,7 @@ body.dark .search-box input::placeholder {
   }
   .section {
     height: initial;
-    width: initial;
+    width: 100vw;
   }
   .container-project-all {
     flex-direction: column;
