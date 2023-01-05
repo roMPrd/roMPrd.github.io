@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* ===== Color Variables ===== */
+/* ===== color variables ===== */
 
 :root {
   --primary-color: #4e98f7;
@@ -13,6 +13,7 @@
   --text-secondary-color: #11101d;
 }
 
+/* ===== general ===== */
 
 * {
   margin: 0;
@@ -30,8 +31,17 @@ body.dark {
   --background-color: #18191A;
   --sidebar-color: #242526;
   --text-color: #CCC;
-  --text-secondary-color: #fff;
+  --text-secondary-color: #CCC;
 }
+
+h1, h2, h3, h4, h5, h6, p {
+  /* font-weight: 500; */
+  color: var(--text-secondary-color);
+  transition: all 0.2s ease;
+}
+
+/* ===== nav ===== */
+
 .nav {
   position:fixed;
   top: 0;
@@ -219,7 +229,7 @@ body.dark .search-box input::placeholder {
   pointer-events: none;
 }
 
-/* ===== Section ===== */
+/* ===== section ===== */
 
 section {
   height: calc(100vh - 80px);
@@ -229,7 +239,15 @@ section {
   padding: 5% 10%;
 }
 
-/* ===== Hide Pages ===== */
+/* ===== avatar ===== */
+
+.avatar-big {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* ===== hide pages ===== */
 
 .hide {
   display: none;

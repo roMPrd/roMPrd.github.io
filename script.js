@@ -88,14 +88,27 @@ projectsMenu.addEventListener('click', () => {
 
 // ===== Toggle Pages ===== //
 
-window.onload = () => {
+// window.onload = () => {
+//   containerAboutMe.classList.add('hide');
+//   containerContactMe.classList.add('hide');
+//   projectCodehunter.classList.add('hide');
+//   projectBatch1030.classList.add('hide');
+// };
+
+logo.addEventListener('click', () => {
+  projectsDropdownLinks.classList.remove('openProject');
+
+  containerHome.classList.remove('hide');
+
   containerAboutMe.classList.add('hide');
   containerContactMe.classList.add('hide');
   projectCodehunter.classList.add('hide');
   projectBatch1030.classList.add('hide');
-};
+});
 
 linkHome.addEventListener('click', () => {
+  projectsDropdownLinks.classList.remove('openProject');
+
   containerHome.classList.remove('hide');
 
   containerAboutMe.classList.add('hide');
@@ -105,6 +118,8 @@ linkHome.addEventListener('click', () => {
 });
 
 linkAboutMe.addEventListener('click', () => {
+  projectsDropdownLinks.classList.remove('openProject');
+
   containerAboutMe.classList.remove('hide');
 
   containerHome.classList.add('hide');
@@ -114,6 +129,8 @@ linkAboutMe.addEventListener('click', () => {
 });
 
 linkContactMe.addEventListener('click', () => {
+  projectsDropdownLinks.classList.remove('openProject');
+
   containerContactMe.classList.remove('hide');
 
   containerHome.classList.add('hide');
