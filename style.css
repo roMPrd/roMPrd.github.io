@@ -63,6 +63,7 @@ p { font-size: 16px; }
 }
 .nav {
   justify-content: space-between;
+  z-index: 100;
 }
 .nav a,
 .nav-links a {
@@ -235,11 +236,11 @@ body.dark .search-box input::placeholder {
 
 /* ===== section ===== */
 
-section {
+.section {
   height: calc(100vh - 80px);
   position: absolute;
   top: 80px;
-  z-index: -100;
+  /* z-index: -100; */
   padding: 5% 10%;
   width: 100vw;
 }
@@ -260,24 +261,56 @@ section {
   text-align: center;
 }
 
-.container-project-text {
+.container-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 100%;
+  width: 50%;
   text-align: center;
+  padding: 0 50px;
+
 }
 
-.container-project-img {
+.container-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: 100%;
+  width: 50%;
   text-align: center;
+  padding: 0 50px;
+}
+.container-right .container-right-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  padding-bottom: 25px;
+}
+.container-right .container-right-top .content-right-top {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.container-right .container-right-bot {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  padding-top: 25px;
+}
+.container-right .container-right-bot .content-right-bot {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9;
 }
 
 /* ===== avatar ===== */
@@ -303,6 +336,19 @@ section {
   .nav .search-box {
     right: 100px;
   }
+  .section {
+    height: initial;
+    width: initial;
+  }
+  .container-project-all {
+    flex-direction: column;
+  }
+  .container-left,
+  .container-right {
+    width: 100%;
+    /* padding: 0 50px; */
+  }
+
 }
 @media screen and (max-width: 950px){
   .nav {
@@ -331,7 +377,7 @@ section {
     background-color: var(--sidebar-color);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease;
-    z-index: 100;
+    /* z-index: 100; */
   }
   .nav.openNav .nav-links {
     left: 0;
