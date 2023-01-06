@@ -366,7 +366,7 @@ transition: all 0.4s ease;
 .container-projects .links-contact {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .links-circle {
   display: flex;
@@ -388,6 +388,7 @@ transition: all 0.4s ease;
 }
 
 .links-rectangle {
+  margin: 10px 0px;
   transition: all 0.5s ease;
 }
 .links-rectangle a{
@@ -412,6 +413,7 @@ transition: all 0.4s ease;
 .links-rectangle:hover {
   background-color: var(--primary-color);
   border-radius: 8px;
+  border: 4px solid var(--text-color);
 }
 .links-rectangle:hover span,
 .links-rectangle:hover a {
@@ -424,6 +426,8 @@ transition: all 0.4s ease;
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  border: 4px solid var(--primary-color);
+  /* box-shadow: 8px 8px 8px 0px var(--primary-color);*/
 }
 
 /* ===== hide pages ===== */
