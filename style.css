@@ -357,12 +357,11 @@ transition: all 0.4s ease;
 
 /* ===== span / links ===== */
 
-.container-contact-me .links-contact span {
-  font-style: normal;
-}
 .container-contact-me .container-right .links-contact {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 .container-projects .links-contact {
   width: 100%;
@@ -376,8 +375,6 @@ transition: all 0.4s ease;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  /* background-color: var(--primary-color); */
-  /* margin: 0 10px; */
   transition: all 0.4s ease;
 }
 .links-circle:hover {
@@ -387,6 +384,37 @@ transition: all 0.4s ease;
   transition: all 0.5s ease;
 }
 .links-circle:hover a {
+  color: var(--text-color);
+}
+
+.links-rectangle {
+  transition: all 0.5s ease;
+}
+.links-rectangle a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  border-radius: 8px;
+  transition: none;
+  position: relative;
+}
+.links-rectangle span {
+  right: -100px;
+  font-size: 24px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  display: none;
+}
+.links-rectangle:hover span {display: flex;}
+.links-rectangle:hover {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+.links-rectangle:hover span,
+.links-rectangle:hover a {
   color: var(--text-color);
 }
 
